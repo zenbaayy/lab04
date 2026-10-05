@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/work/lab04
+collecting ... collected 29 items
+
+test_password_validator.py::test_valid_password_accepted PASSED          [  3%]
+test_password_validator.py::test_is_valid_password_true PASSED           [  6%]
+test_password_validator.py::test_exactly_min_length_allowed PASSED       [ 10%]
+test_password_validator.py::test_one_below_min_length_rejected PASSED    [ 13%]
+test_password_validator.py::test_exactly_max_length_allowed PASSED       [ 17%]
+test_password_validator.py::test_one_above_max_length_rejected PASSED    [ 20%]
+test_password_validator.py::test_missing_uppercase PASSED                [ 24%]
+test_password_validator.py::test_missing_lowercase PASSED                [ 27%]
+test_password_validator.py::test_missing_digit PASSED                    [ 31%]
+test_password_validator.py::test_missing_special_character PASSED        [ 34%]
+test_password_validator.py::test_space_rejected PASSED                   [ 37%]
+test_password_validator.py::test_empty_string_rejected PASSED            [ 41%]
+test_password_validator.py::test_multiple_errors_reported PASSED         [ 44%]
+test_password_validator.py::test_non_string_raises_type_error PASSED     [ 48%]
+test_transfer.py::test_valid_transfer PASSED                             [ 51%]
+test_transfer.py::test_negative_amount_rejected PASSED                   [ 55%]
+test_transfer.py::test_zero_amount_rejected PASSED                       [ 58%]
+test_transfer.py::test_exact_balance_allowed PASSED                      [ 62%]
+test_transfer.py::test_insufficient_balance_rejected PASSED              [ 65%]
+test_wallet.py::test_deposit PASSED                                      [ 68%]
+test_wallet.py::test_deposit_invalid_amount[0] PASSED                    [ 72%]
+test_wallet.py::test_deposit_invalid_amount[-1] PASSED                   [ 75%]
+test_wallet.py::test_withdraw PASSED                                     [ 79%]
+test_wallet.py::test_withdraw_exact_balance_allowed PASSED               [ 82%]
+test_wallet.py::test_withdraw_more_than_balance_rejected PASSED          [ 86%]
+test_wallet.py::test_transfer_updates_both_wallets PASSED                [ 89%]
+test_wallet.py::test_transfer_to_self_rejected PASSED                    [ 93%]
+test_wallet.py::test_failed_transfer_changes_nothing PASSED              [ 96%]
+test_wallet.py::test_negative_opening_balance_rejected PASSED            [100%]
+
+============================== 29 passed in 0.03s ==============================
